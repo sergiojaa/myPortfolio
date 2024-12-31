@@ -19,7 +19,7 @@ export default function Home() {
   <button className="text-[#c5f82a] border border-[#c5f82a] py-2 px-10 rounded-3xl hover:bg-[#c5f82a] hover:text-black transition">
   DOWNLOAD CV
 </button>
-<div className="flex gap-3 mt-5 lg:mt-0">
+<div className="flex items-center justify-center gap-3 mt-5 lg:mt-0">
 <FontAwesomeIcon  icon={faGithub} 
   className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
 />
