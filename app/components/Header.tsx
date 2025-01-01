@@ -19,7 +19,7 @@ export default function Header({hamburgerOpen,open,setOpen}:HeaderProps) {
   });
   return (
     <div>
-       <div className="flex justify-between py-6 px-4 items-center">
+       <div className="flex lg:ml-60 justify-between py-6 px-4 items-center">
       <div>
         <h1 className="text-[30px] text-white  font-semibold">Sergi
            <span className="text-[#c5f82a]">.</span></h1>
