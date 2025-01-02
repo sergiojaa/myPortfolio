@@ -1,0 +1,31 @@
+[
+    {
+      "title": "About me",
+      "text": "Aspiring software developer with a focus on innovative solutions in AI, healthcare, and business. Skilled in modern web technologies and passionate about advancing technology-driven solutions.",
+      "personal_info": {
+        "name": "Sergi Kaliashvili",
+        "experience": "2 years",
+        "nationality": "Georgian",
+        "freelance_available": true,
+        "phone": "+(995) 555259294",
+        "github": "sergiojaa",
+        "email": "kaliashvilisergi@gmail.com",
+        "languages": "English"
+      }
+    },
+    {
+      "title": "My Skills",
+      "text":"Proficient in HTML, CSS, JavaScript, Next.js, React.js, Tailwind CSS, TypeScript, React Native, Electron.js,and Node.js, with a focus on building responsive and dynamic web applications.",
+      "images": [
+        { "url": "/assets/htmllogo.svg" },
+      { "url": "https://example.com/image2.jpg" },
+      { "url": "https://example.com/image3.jpg" },
+      { "url": "https://example.com/image4.jpg" },
+      { "url": "https://example.com/image5.jpg" },
+      { "url": "https://example.com/image6.jpg" },
+      { "url": "https://example.com/image7.jpg" },
+      { "url": "https://example.com/image8.jpg" }
+    ]
+    }
+  ]
+  
