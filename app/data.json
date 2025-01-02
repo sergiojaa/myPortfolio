@@ -18,7 +18,7 @@
       "text":"Proficient in HTML, CSS, JavaScript, Next.js, React.js, Tailwind CSS, TypeScript, React Native, Electron.js,and Node.js, with a focus on building responsive and dynamic web applications.",
       "images": [
         { "url": "/assets/htmllogo.svg" },
-      { "url": "https://example.com/image2.jpg" },
+      { "url": "/assets/csslogo.svg" },
       { "url": "https://example.com/image3.jpg" },
       { "url": "https://example.com/image4.jpg" },
       { "url": "https://example.com/image5.jpg" },
