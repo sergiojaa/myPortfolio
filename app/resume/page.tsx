@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react';
 import data from '../data.json';
-
 // Define types for the personalInfo and content structure
 interface PersonalInfo {
   name: string;
@@ -116,6 +115,7 @@ const Page: React.FC = () => {
             />
           )}
         </div>
+
       </div>
     </div>
   );
