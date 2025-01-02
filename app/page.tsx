@@ -46,20 +46,20 @@ export default function Home() {
   
 
 </div>
-<div className="flex mt-8 md:mt-16 justify-center items-center md:gap-8 lg:gap-14 lg:mt-28 md:flex-row md:justify-center md:items-center flex-col gap-5">
-    <div className="text-white w-[150px]  justify-center flex items-center">
+<div className="flex mt-8 md:mt-16 justify-center items-center md:gap-8 lg:gap-32 lg:mt-28 md:flex-row md:justify-center md:items-center flex-col gap-5">
+    <div className="text-white w-[150px] gap-4  justify-center flex items-center">
       <h3 className="text-3xl lg:text-[45px]  font-bold">3</h3>
       <h4 >years of experience</h4>
     </div>
-    <div className="text-white w-[150px] justify-center flex items-center">
+    <div className="text-white w-[150px] gap-4 justify-center flex items-center">
       <h3 className="text-3xl lg:text-[45px]  font-bold">4</h3>
       <h4 >Projects completed</h4>
     </div>
-    <div className="text-white w-[150px] justify-center flex items-center">
+    <div className="text-white w-[150px] gap-4 justify-center flex items-center">
       <h3 className="text-3xl lg:text-[45px] font-bold">6</h3>
       <h4 >Technologies mastered</h4>
     </div>
-    <div className="text-white w-[150px] justify-center flex items-center">
+    <div className="text-white w-[150px] gap-4 justify-center flex items-center">
       <h3 className="text-3xl lg:text-[45px]  font-bold">999</h3>
       <h4 >Total commits</h4>
     </div>

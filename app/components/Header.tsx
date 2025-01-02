@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 type HeaderProps = {
@@ -23,7 +24,7 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
   return (
     <div>
       {/* Header Section */}
-      <div className="flex  justify-around py-6 px-4 items-center">
+      <div className="flex  justify-between lg:justify-around  py-6 px-4 items-center">
         <div>
           <h1 className="text-[30px] text-white font-semibold">
             Sergi<span className="text-[#c5f82a]">.</span>
@@ -128,14 +129,11 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
             >
               Work
             </a>
-            <a
-              href="#contact"
-      
-              style={getLinkStyle('Contact')}
-              onClick={() => handleLinkClick('Contact')}
-            >
-              Contact
-            </a>
+            <Link 
+            onClick={() => handleLinkClick('Contact')}
+            style={getLinkStyle('Contact')}
+            href={'Contact'}>Contact</Link>
+           
           </div>
         </div>
       )}
