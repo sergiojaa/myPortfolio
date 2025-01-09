@@ -7,7 +7,7 @@ import me from './assets/me.jpg'
 export default function Home() {
   return (
     <div>
-          <div className="lg:flex justify-around flex-row-reverse" >
+          <div className="lg:flex  justify-around flex-row-reverse" >
       <div className="flex justify-center items-center rounded-3xl">
         <Image src={me} className="w-[200px] lg:mr-10 lg:w-[300px] rounded-3xl mb-6"  alt="me"/>
       </div>
@@ -46,9 +46,9 @@ export default function Home() {
   
 
 </div>
-<div className="flex mt-8 md:mt-16 justify-center items-center md:gap-8 lg:gap-32 lg:mt-28 md:flex-row md:justify-center md:items-center flex-col gap-5">
-    <div className="text-white w-[150px] gap-4  justify-center flex items-center">
-      <h3 className="text-3xl lg:text-[45px]  font-bold">3</h3>
+<div className="flex lg:w-[1150px]  mx-auto mt-8 md:mt-16 justify-between  items-center md:gap-8 lg:gap-32 lg:mt-28 md:flex-row md:justify-between md:items-center flex-col gap-5">
+    <div className="text-white w-[150px] gap-4   justify-center flex items-center">
+      <h3 className="text-3xl lg:text-[45px]   font-bold">3</h3>
       <h4 >years of experience</h4>
     </div>
     <div className="text-white w-[150px] gap-4 justify-center flex items-center">

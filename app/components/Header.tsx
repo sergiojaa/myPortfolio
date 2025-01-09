@@ -24,7 +24,7 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
   return (
     <div>
       {/* Header Section */}
-      <div className="flex  justify-between lg:justify-around  py-6 px-4 items-center">
+      <div className="flex  lg:w-[1150px] mx-auto   justify-between   py-6  items-center">
         <div>
           <h1 className="text-[30px] text-white font-semibold">
             Sergi<span className="text-[#c5f82a]">.</span>
@@ -77,6 +77,14 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
             onClick={() => handleLinkClick('Contact')}
           >
             Contact
+          </a>
+          <a
+            href="#contact"
+            // style={getLinkStyle('Contact')}
+            onClick={() => handleLinkClick('Contact')}
+            className='border border-[#c5f82a] text-gray-500 bg-[#c5f82a] py-2 px-10 rounded-3xl  '
+          >
+            Hire me
           </a>
         </div>
       </div>
