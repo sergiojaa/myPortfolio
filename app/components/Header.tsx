@@ -43,41 +43,30 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-8 text-white">
-          <a
-            href="#home"
-            style={getLinkStyle('Home')}
-            onClick={() => handleLinkClick('Home')}
-          >
-            Home
-          </a>
-          <a
-            href="#services"
-            style={getLinkStyle('Services')}
-            onClick={() => handleLinkClick('Services')}
-          >
-            Services
-          </a>
-          <a
+          <Link href={'/'}>
+          Home
+          </Link>
+            
+         <Link href={'/services'}>
+         Services
+
+         </Link>
+          {/* <a
             href="#resume"
             style={getLinkStyle('Resume')}
             onClick={() => handleLinkClick('Resume')}
-          >
-            Resume
-          </a>
-          <a
-            href="#work"
-            style={getLinkStyle('Work')}
-            onClick={() => handleLinkClick('Work')}
-          >
-            Work
-          </a>
-          <a
-            href="#contact"
-            style={getLinkStyle('Contact')}
-            onClick={() => handleLinkClick('Contact')}
-          >
+          > */}
+          <Link href={'/resume'}>
+          Resume
+          </Link>
+          {/* </a> */}
+          <Link href={'/work'}>
+          Work
+          </Link>
+            
+          <Link href={'/contact'}>
             Contact
-          </a>
+          </Link>
           <a
             href="#contact"
             // style={getLinkStyle('Contact')}
