@@ -15,16 +15,17 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
     setActiveLink(link);
   };
 
-  const getLinkStyle = (link: string) => ({
-    color: activeLink === link ? '#c5f82a' : 'white',
-    borderBottom: activeLink === link ? '2px solid #c5f82a' : 'none',
-    transition: 'color 0.3s',
-  });
+  const getLinkClass = (link: string) =>
+    `transition-colors duration-300 ${
+      activeLink === link
+        ? 'text-[#c5f82a] border-b-2 border-[#c5f82a]'
+        : 'text-white hover:text-[#c5f82a] hover:border-b-2 hover:border-[#c5f82a]'
+    }`;
 
   return (
     <div>
       {/* Header Section */}
-      <div className="flex  lg:w-[1150px] mx-auto   justify-between   py-6  items-center">
+      <div className="flex lg:w-[825px] mx-5 lg:mx-auto  justify-between py-6 items-center">
         <div>
           <h1 className="text-[30px] text-white font-semibold">
             Sergi<span className="text-[#c5f82a]">.</span>
@@ -42,36 +43,26 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex gap-8 text-white">
-          <Link href={'/'}>
-          Home
+        <div className="hidden lg:flex items-center gap-8 text-white">
+          <Link href="/" className={getLinkClass('Home')} onClick={() => handleLinkClick('Home')}>
+            Home
           </Link>
-            
-         <Link href={'/services'}>
-         Services
-
-         </Link>
-          {/* <a
-            href="#resume"
-            style={getLinkStyle('Resume')}
-            onClick={() => handleLinkClick('Resume')}
-          > */}
-          <Link href={'/resume'}>
-          Resume
+          <Link href="/services" className={getLinkClass('Services')} onClick={() => handleLinkClick('Services')}>
+            Services
           </Link>
-          {/* </a> */}
-          <Link href={'/work'}>
-          Work
+          <Link href="/resume" className={getLinkClass('Resume')} onClick={() => handleLinkClick('Resume')}>
+            Resume
           </Link>
-            
-          <Link href={'/contact'}>
+          <Link href="/work" className={getLinkClass('Work')} onClick={() => handleLinkClick('Work')}>
+            Work
+          </Link>
+          <Link href="/contact" className={getLinkClass('Contact')} onClick={() => handleLinkClick('Contact')}>
             Contact
           </Link>
           <a
             href="#contact"
-            // style={getLinkStyle('Contact')}
             onClick={() => handleLinkClick('Contact')}
-            className='border border-[#c5f82a] text-gray-500 bg-[#c5f82a] py-2 px-10 rounded-3xl  '
+            className="border border-[#c5f82a] text-gray-500 bg-[#c5f82a] py-2 px-4 rounded-3xl"
           >
             Hire me
           </a>
@@ -80,11 +71,8 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
 
       {/* Mobile Navigation */}
       {open && (
-        <div className="fixed  inset-0 z-10 w-full h-screen">
-          <div
-            className="w-full h-full bg-black opacity-30"
-            onClick={hamburgerOpen}
-          ></div>
+        <div className="fixed inset-0 z-10 w-full h-screen">
+          <div className="w-full h-full bg-black opacity-30" onClick={hamburgerOpen}></div>
           <div className="flex flex-col gap-4 bg-[#1c1c22] w-[70%] h-full absolute right-0 top-0 items-center text-white z-20 p-4">
             <div className="flex justify-end w-full">
               <button
@@ -94,43 +82,25 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
                 X
               </button>
             </div>
-            <h1 className="text-[30px]  mb-14 mt-7 font-semibold">
+            <h1 className="text-[30px] mb-14 mt-7 font-semibold">
               Sergi<span className="text-[#c5f82a]">.</span>
             </h1>
-            
-            <a
-              href="#home"
-              style={getLinkStyle('Home')}
-              onClick={() => handleLinkClick('Home')}
-            >
+
+            <Link href="/" className={getLinkClass('Home')} onClick={() => handleLinkClick('Home')}>
               Home
-            </a>
-            <a
-              href="#services"
-              style={getLinkStyle('Services')}
-              onClick={() => handleLinkClick('Services')}
-            >
+            </Link>
+            <Link href="/services" className={getLinkClass('Services')} onClick={() => handleLinkClick('Services')}>
               Services
-            </a>
-            <a
-              href="#resume"
-              style={getLinkStyle('Resume')}
-              onClick={() => handleLinkClick('Resume')}
-            >
+            </Link>
+            <Link href="/resume" className={getLinkClass('Resume')} onClick={() => handleLinkClick('Resume')}>
               Resume
-            </a>
-            <a
-              href="#work"
-              style={getLinkStyle('Work')}
-              onClick={() => handleLinkClick('Work')}
-            >
+            </Link>
+            <Link href="/work" className={getLinkClass('Work')} onClick={() => handleLinkClick('Work')}>
               Work
-            </a>
-            <Link 
-            onClick={() => handleLinkClick('Contact')}
-            style={getLinkStyle('Contact')}
-            href={'Contact'}>Contact</Link>
-           
+            </Link>
+            <Link href="/contact" className={getLinkClass('Contact')} onClick={() => handleLinkClick('Contact')}>
+              Contact
+            </Link>
           </div>
         </div>
       )}
