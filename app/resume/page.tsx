@@ -1,7 +1,7 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import data from '../data.json';
-// Define types for the personalInfo and content structure
+
 interface PersonalInfo {
   name: string;
   experience: string;
@@ -17,27 +17,26 @@ interface Content {
   title: string;
   text?: string;
   personal_info?: PersonalInfo;
-  images?: { url: string }[]; // Add images prop
+  images?: { url: string }[]; 
 }
 
-// Define props type for ContentDisplay component
 interface ContentDisplayProps {
   title: string;
   text?: string;
   personalInfo?: PersonalInfo;
-  images?: { url: string }[]; // Add images prop
+  images?: { url: string }[]; 
 }
 
 const ContentDisplay: React.FC<ContentDisplayProps> = ({ title, text, personalInfo, images }) => {
   if (!text && !personalInfo && !images) return null;
 
   return (
-    <div>
+    <div >
       <h1 className='text-3xl text-white'>{title}</h1>
-      {text && <p className='text-[#FFFFFF99]'>{text}</p>}
+      {text && <p className='text-[#FFFFFF99] '>{text}</p>}
       {personalInfo && (
-        <div className='flex flex-col lg:flex-row justify-around'>
-          <div className='flex flex-col gap-2 mt-3 text-[#FFFFFF99]'>
+        <div className='flex flex-col  lg:flex-row justify-between'>
+          <div className='flex flex-col gap-2 mt-5 text-[#FFFFFF99]'>
             <p>Name: <span className='text-white'>{personalInfo.name}</span></p>
             <p>Experience: <span className='text-white'>{personalInfo.experience}</span></p>
             <p>Nationality: <span className='text-white'>{personalInfo.nationality}</span></p>
@@ -75,47 +74,44 @@ const Page: React.FC = () => {
   const selectedContent = info.find(information => information.title === selectedSection);
 
   return (
-    <div>
-      <div className='flex mt-16 lg:flex-row flex-col gap-10 justify-center items-center'>
-        <div className='flex flex-col gap-5 justify-center items-center'>
-          <button
-            className='bg-[#c5f82a] w-[290px] py-1 px-20 rounded-lg'
-            onClick={() => handleButtonClick('About me')}
-          >
-            About Me
-          </button>
-          <button
-            className='bg-[#c5f82a] w-[290px] py-1 px-20 rounded-lg'
-            onClick={() => handleButtonClick('Experience')}
-          >
-            Experience
-          </button>
-          <button
-            className='bg-[#c5f82a] w-[290px] py-1 px-20 rounded-lg'
-            onClick={() => handleButtonClick('Education')}
-          >
-            Education
-          </button>
-          <button
-            className='bg-[#c5f82a] w-[290px] py-1 px-20 rounded-lg'
-            onClick={() => handleButtonClick('Skills')}
-          >
-            Skills
-          </button>
-        </div>
+    <div className='flex  mt-5 lg:flex-row flex-col gap-10 justify-center items-center'>
+      <div className='flex     flex-col gap-5 justify-center items-center'>
+        <button
+          className='bg-[#27272c] h-[40px] text-white w-[292px] py-1 px-20 rounded-lg'
+          onClick={() => handleButtonClick('About me')}
+        >
+          About Me
+        </button>
+        <button
+          className='bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg'
+          onClick={() => handleButtonClick('Experience')}
+        >
+          Experience
+        </button>
+        <button
+          className='bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg'
+          onClick={() => handleButtonClick('Education')}
+        >
+          Education
+        </button>
+        <button
+          className='bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg'
+          onClick={() => handleButtonClick('Skills')}
+        >
+          Skills
+        </button>
+      </div>
 
-        <div className='w-[500px]'>
-          {/* Render the selected content */}
-          {selectedContent && (
-            <ContentDisplay
-              title={selectedContent.title}
-              text={selectedContent.text}
-              personalInfo={selectedContent.personal_info}
-              images={selectedContent.images} // Pass images here
-            />
-          )}
-        </div>
-
+      <div className='w-[500px]'>
+        {/* Render the selected content */}
+        {selectedContent && (
+          <ContentDisplay
+            title={selectedContent.title}
+            text={selectedContent.text}
+            personalInfo={selectedContent.personal_info}
+            images={selectedContent.images} // Pass images here
+          />
+        )}
       </div>
     </div>
   );

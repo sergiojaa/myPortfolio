@@ -19,7 +19,7 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
     `transition-colors duration-300 ${
       activeLink === link
         ? 'text-[#c5f82a] border-b-2 border-[#c5f82a]'
-        : 'text-white hover:text-[#c5f82a] hover:border-b-2 hover:border-[#c5f82a]'
+        : 'text-white hover:text-[#c5f82a]  hover:border-[#c5f82a]'
     }`;
 
   return (
@@ -27,9 +27,12 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
       {/* Header Section */}
       <div className="flex lg:w-[825px] mx-5 lg:mx-auto  justify-between py-6 items-center">
         <div>
+          <Link href={'/'}>
           <h1 className="text-[30px] text-white font-semibold">
             Sergi<span className="text-[#c5f82a]">.</span>
           </h1>
+          </Link>
+         
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -62,7 +65,7 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
           <a
             href="#contact"
             onClick={() => handleLinkClick('Contact')}
-            className="border border-[#c5f82a] text-gray-500 bg-[#c5f82a] py-2 px-4 rounded-3xl"
+            className="border border-[#c5f82a] text-black bg-[#c5f82a] py-2 px-4 hover:bg-customGreen transition duration-300 ease-in-out rounded-3xl"
           >
             Hire me
           </a>
@@ -82,9 +85,10 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
                 X
               </button>
             </div>
-            <h1 className="text-[30px] mb-14 mt-7 font-semibold">
+            <h1 className="text-[30px]  mb-14 mt-7 font-semibold">
               Sergi<span className="text-[#c5f82a]">.</span>
             </h1>
+           
 
             <Link href="/" className={getLinkClass('Home')} onClick={() => handleLinkClick('Home')}>
               Home

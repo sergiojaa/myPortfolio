@@ -12,7 +12,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customGreen: 'hsl(90, 94%, 57%)',
+
       },
+    
     },
    
   },

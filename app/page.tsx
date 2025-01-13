@@ -54,7 +54,7 @@ export default function Home() {
       <h3 className="text-3xl lg:text-[45px]  font-bold">4</h3>
       <h4 className="text-[#FFFFFFE6]">Projects completed</h4>
     </div>
-<div className="flex justify-center items-center">
+<div className="flex text-white gap-4  justify-center items-center">
       <h3 className="text-3xl lg:text-[45px] font-bold">6</h3>
       <h4  className="text-[#FFFFFFE6]">Technologies mastered</h4>
     </div>
