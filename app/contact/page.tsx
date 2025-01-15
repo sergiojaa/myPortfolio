@@ -76,7 +76,7 @@ export default function page() {
                                         onChange={handleChange}
                                         className='bg-[#1c1c22] min-w-[203px] max-w-[430px] w-full md:w-[203px] text-[#ffffff99] text-white border py-[6px] px-[10px] text-left '
                                         type="text"
-                                        placeholder='Firstname'
+                                        placeholder='Name'
                                         name='name'
                                     />
                                     <input
