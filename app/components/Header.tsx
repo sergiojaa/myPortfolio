@@ -16,10 +16,9 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
   };
 
   const getLinkClass = (link: string) =>
-    `transition-colors duration-300 ${
-      activeLink === link
-        ? 'text-[#c5f82a] border-b-2 border-[#c5f82a]'
-        : 'text-white hover:text-[#c5f82a]  hover:border-[#c5f82a]'
+    `transition-colors duration-300 ${activeLink === link
+      ? 'text-[#c5f82a] border-b-2 border-[#c5f82a]'
+      : 'text-white hover:text-[#c5f82a]  hover:border-[#c5f82a]'
     }`;
 
   return (
@@ -28,11 +27,11 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
       <div className="flex lg:w-[825px] mx-5 lg:mx-auto  justify-between py-6 items-center">
         <div>
           <Link href={'/'}>
-          <h1 className="text-[30px] text-white font-semibold">
-            Sergi<span className="text-[#c5f82a]">.</span>
-          </h1>
+            <h1 className="text-[30px] text-white font-semibold">
+              Sergi<span className="text-[#c5f82a]">.</span>
+            </h1>
           </Link>
-         
+
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -50,9 +49,7 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
           <Link href="/" className={getLinkClass('Home')} onClick={() => handleLinkClick('Home')}>
             Home
           </Link>
-          <Link href="/services" className={getLinkClass('Services')} onClick={() => handleLinkClick('Services')}>
-            Services
-          </Link>
+
           <Link href="/resume" className={getLinkClass('Resume')} onClick={() => handleLinkClick('Resume')}>
             Resume
           </Link>
@@ -88,7 +85,7 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
             <h1 className="text-[30px]  mb-14 mt-7 font-semibold">
               Sergi<span className="text-[#c5f82a]">.</span>
             </h1>
-           
+
 
             <Link href="/" className={getLinkClass('Home')} onClick={() => handleLinkClick('Home')}>
               Home
