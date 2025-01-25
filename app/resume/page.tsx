@@ -34,7 +34,7 @@ const Page: React.FC = () => {
   const selectedContent = info.find((information) => information.title === selectedSection);
 
   return (
-    <div className="flex mt-5 lg:flex-row flex-col gap-10 justify-center items-center">
+    <div className="flex mt-5 lg:flex-row flex-col gap-10 justify-center items-start">
       {/* Sidebar with buttons */}
       <div className="flex flex-col gap-5 justify-center items-center">
         <button
@@ -43,12 +43,12 @@ const Page: React.FC = () => {
         >
           About Me
         </button>
-        <button
+        {/* <button
           className="bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg"
           onClick={() => handleButtonClick('Experience')}
         >
           Experience
-        </button>
+        </button> */}
         <button
           className="bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg"
           onClick={() => handleButtonClick('Education')}

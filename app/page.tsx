@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import me from './assets/me.jpg'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,25 +20,32 @@ export default function Home() {
           <p className="min-w-[200px]  max-w-[500px] w-full pl-12 px-7 md:pl-0 pb-4 text-[#FFFFFFE6] leading-8">
             I excel at crafting sleek and user-friendly digital experiences. With expertise in various programming languages and technologies, I bring creative ideas to life through efficient and engaging solutions.
           </p>
-          <div className="lg:flex items-center gap-5 ">
-            <button className="text-[#c5f82a] border border-[#c5f82a] py-2 px-10 mt-2 rounded-3xl hover:bg-[#c5f82a] hover:text-black transition">
+          <div className="lg:flex  items-center gap-5 ">
+            <button className="text-[#c5f82a]  border border-[#c5f82a] py-2 px-10 mt-2 rounded-3xl hover:bg-[#c5f82a] hover:text-black transition">
               DOWNLOAD CV
             </button>
-            <div className="flex items-center justify-center gap-3 mt-5 lg:mt-0">
-              <FontAwesomeIcon icon={faGithub}
-                className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
-              />
-              <FontAwesomeIcon icon={faLinkedin}
-                className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
-              />
-              <FontAwesomeIcon icon={faInstagram}
-                className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
-              />
+            <div className="flex items-center justify-center gap-3 mt-5 lg:mt-0 transform translate-y-1">
+              <a href="https://github.com/sergiojaa" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/sergi-qaliashvili/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin}
+                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
+                />
+              </a>
+              <a href="https://www.instagram.com/sergi_qaliashvili/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram}
+                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
+                />
+              </a>
+
+
 
 
             </div>
-
-
           </div>
 
         </div>

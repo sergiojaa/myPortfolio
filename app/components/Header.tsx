@@ -59,13 +59,15 @@ export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
           <Link href="/contact" className={getLinkClass('Contact')} onClick={() => handleLinkClick('Contact')}>
             Contact
           </Link>
-          <a
-            href="#contact"
-            onClick={() => handleLinkClick('Contact')}
-            className="border border-[#c5f82a] text-black bg-[#c5f82a] py-2 px-4 hover:bg-customGreen transition duration-300 ease-in-out rounded-3xl"
-          >
-            Hire me
-          </a>
+          <Link href="/contact">
+            <button
+              onClick={() => handleLinkClick('Contact')}
+              className="border border-[#c5f82a] text-black bg-[#c5f82a] py-2 px-4 hover:bg-customGreen transition duration-300 ease-in-out rounded-3xl"
+            >
+              Hire me
+            </button>
+          </Link>
+
         </div>
       </div>
 
