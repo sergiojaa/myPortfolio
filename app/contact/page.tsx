@@ -12,16 +12,28 @@ export default function Page() {
     console.log(input)
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Conttent-Type':
-                    'application/json',
-            },
-            body: JSON.stringify(input)
-        })
-        console.log(response)
-    }
+        if (!input.name || !input.email || !input.text) {
+            alert('Please fill in all the fields.');
+            return;
+        }
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(input),
+            });
+            if (response.ok) {
+                console.log('Message sent successfully!');
+            } else {
+                console.error('Failed to send message:', response.statusText);
+            }
+        } catch (error) {
+            console.error('An error occurred:', error);
+        }
+    };
+
     const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const target = event.target as HTMLInputElement;
         setInput({
@@ -66,7 +78,8 @@ export default function Page() {
                 </div>
                 <div className='bg-[#27272c] mt-16 lg:mt-5 mx-4 flex md:mx-auto lg:mx-0 flex-col items-center justify-center rounded-xl max-w-[700px]' >
                     <div className='flex flex-col items-start  gap-5 justify-'>
-                        <h2 className='text-[#c5f82a] mt-10 pl-11 text-3xl leading-9'>Let's work together</h2>
+                        <h3 className='text-[#c5f82a] mt-10 pl-11 text-3xl leading-9'>Let&apos;s work together</h3>
+
                         <p className=' min-w-[106px] max-w-[454px] mb-5 pl-3  mx-8 text-[#ffffff99] text-[15px]'>Reach out, and let’s explore how we can create something exceptional together.</p>
                     </div>
                     <div>

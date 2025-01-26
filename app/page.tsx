@@ -14,8 +14,8 @@ export default function Home() {
         </div>
         <div className="flex text-center md:text-left flex-col lg:ml-10 lg:mt-9 lg:items-start justify-center  items-center">
           <h3 className="text-white ml-[2px] text-2xl leading-7">Front-End developer</h3>
-          <h1 className="text-white py-4  lg:text-[50px] lg:ml-0 w-[200px] lg:w-[390px] text-4xl font-semibold leading-[1.1]">
-            Hello I'm <span className="text-[#c5f82a]"> <br /> Sergi Qaliashvili</span>
+          <h1 className="text-white py-4 lg:text-[50px] lg:ml-0 w-[200px] lg:w-[390px] text-4xl font-semibold leading-[1.1]">
+            Hello I&apos;m <span className="text-[#c5f82a]"> <br /> Sergi Qaliashvili</span>
           </h1>
           <p className="min-w-[200px]  max-w-[500px] w-full pl-12 px-7 md:pl-0 pb-4 text-[#FFFFFFE6] leading-8">
             I’m a software engineer with experience in building scalable applications using JavaScript, React, TypeScript, Tailwind, and Next.js. I focus on creating fast, responsive web applications that deliver excellent user experiences. Passionate about problem-solving and working in teams, I strive to build efficient, high-quality solutions through collaboration and innovation.          </p>
