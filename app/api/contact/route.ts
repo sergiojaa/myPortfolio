@@ -28,10 +28,11 @@ export async function POST(req: Request,) {
         return Response.json({
             message: 'Email send successfully'
         })
-    } catch (error) {
-        return Response.json({
-            error: 'failed to send email'
-        })
+    } catch {
+        return new Response(
+            JSON.stringify({ error: 'Failed to send email' }),
+            { status: 500, headers: { 'Content-Type': 'application/json' } }
+        );
     }
 
 }

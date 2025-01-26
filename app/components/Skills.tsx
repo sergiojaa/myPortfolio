@@ -1,19 +1,18 @@
 'use client'
-import React, { useState } from 'react'
-import data from '../data.json'
+import React from 'react'
+// import data from '../data.json'
 import htmlLogo from '../assets/htmllogo.svg'
 import jsLogo from '../assets/jslogo.svg'
 import cssLogo from '../assets/csslogo.svg'
 import reactLogo from '../assets/reactlogo.svg'
 import Image from 'next/image'
 import { SiNextdotjs } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaGitSquare } from "react-icons/fa";
 
 export default function Skills() {
-    const [info, setInfo] = useState(data)
+    // const [info, setInfo] = useState(data)
     return (
         <div>
             <div className='flex flex-col  items-center lg:items-start justify-center'>

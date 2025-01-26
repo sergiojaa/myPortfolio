@@ -20,6 +20,7 @@ export default function Page() {
             },
             body: JSON.stringify(input)
         })
+        console.log(response)
     }
     const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const target = event.target as HTMLInputElement;

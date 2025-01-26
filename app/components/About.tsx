@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-
+import Image from 'next/image'
 interface PersonalInfo {
     name: string;
     experience: string;
@@ -66,7 +66,14 @@ const About: React.FC<AboutProps> = ({ content }) => {
             {images && (
                 <div className="grid grid-cols-2 gap-4 mt-4">
                     {images.map((image, index) => (
-                        <img key={index} src={image.url} alt={`Skill ${index + 1}`} className="w-full rounded-lg" />
+                        <Image
+                            key={index}
+                            src={image.url}
+                            alt={`Skill ${index + 1}`}
+                            width={500} // specify the width
+                            height={500} // specify the height
+                            className="w-full rounded-lg"
+                        />
                     ))}
                 </div>
             )}
