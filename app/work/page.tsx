@@ -1,9 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { GoArrowUpRight } from "react-icons/go";
 
-// import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FaGithub } from "react-icons/fa";
 
 export default function Work() {

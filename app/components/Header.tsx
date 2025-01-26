@@ -8,7 +8,7 @@ type HeaderProps = {
   hamburgerOpen: () => void;
 };
 
-export default function Header({ open, setOpen, hamburgerOpen }: HeaderProps) {
+export default function Header({ open, hamburgerOpen }: HeaderProps) {
   const [activeLink, setActiveLink] = useState('Home');
 
   const handleLinkClick = (link: string) => {

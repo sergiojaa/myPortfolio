@@ -1,5 +1,4 @@
 'use client';
-import type { Metadata } from 'next';
 import React, { useState } from 'react';
 import Header from './components/Header';
 import './globals.css';

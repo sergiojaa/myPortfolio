@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import me from './assets/me.jpg'
-import Link from "next/link";
+
 
 export default function Home() {
   return (
