@@ -7,10 +7,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <div className="lg:flex lg:w-[955px] mx-auto justify-around flex-row-reverse" >
-        <div className="flex justify-center items-center rounded-3xl">
-          <Image src={me} className="w-[250px] mt-5 lg:mr-10 lg:w-[300px] rounded-3xl mb-6" alt="me" />
+    <div className="mb-20" >
+      <div className="lg:flex  lg:w-[955px] items-center mx-auto justify-around flex-row-reverse" >
+        <div className="flex justify-center items-center">
+          <Image width={350} height={200} alt='me' src='/mee.jpeg'
+            className="mt-5 h-[350px] rounded-full lg:mr-10 mb-6"
+          />
         </div>
         <div className="flex text-center md:text-left flex-col lg:ml-10 lg:mt-9 lg:items-start justify-center  items-center">
           <h3 className="text-white ml-[2px] text-2xl leading-7">Front-End developer</h3>
@@ -18,8 +20,7 @@ export default function Home() {
             Hello I'm <span className="text-[#c5f82a]"> <br /> Sergi Qaliashvili</span>
           </h1>
           <p className="min-w-[200px]  max-w-[500px] w-full pl-12 px-7 md:pl-0 pb-4 text-[#FFFFFFE6] leading-8">
-            I excel at crafting sleek and user-friendly digital experiences. With expertise in various programming languages and technologies, I bring creative ideas to life through efficient and engaging solutions.
-          </p>
+            I’m a software engineer with experience in building scalable applications using JavaScript, React, TypeScript, Tailwind, and Next.js. I focus on creating fast, responsive web applications that deliver excellent user experiences. Passionate about problem-solving and working in teams, I strive to build efficient, high-quality solutions through collaboration and innovation.          </p>
           <div className="lg:flex  items-center gap-5 ">
             <button className="text-[#c5f82a]  border border-[#c5f82a] py-2 px-10 mt-2 rounded-3xl hover:bg-[#c5f82a] hover:text-black transition">
               DOWNLOAD CV

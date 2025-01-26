@@ -34,7 +34,7 @@ const Page: React.FC = () => {
   const selectedContent = info.find((information) => information.title === selectedSection);
 
   return (
-    <div className="flex mt-5 lg:flex-row flex-col gap-10 justify-center items-start">
+    <div className="flex mt-5 lg:flex-row flex-col items-center gap-10 justify-center md:items-start">
       {/* Sidebar with buttons */}
       <div className="flex flex-col gap-5 justify-center items-center">
         <button

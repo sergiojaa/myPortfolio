@@ -27,12 +27,12 @@ const About: React.FC<AboutProps> = ({ content }) => {
     const { title, text, personal_info, images } = content;
 
     return (
-        <div>
+        <div className='flex flex-col md:items-start  items-center'>
             <h1 className="text-3xl text-white">{title}</h1>
-            {text && <p className="text-[#FFFFFF99]">{text}</p>}
+            {text && <p className="text-[#FFFFFF99] min-w-[300px] max-w-[500px]">{text}</p>}
             {personal_info && (
-                <div className="flex flex-col lg:flex-row justify-between">
-                    <div className="flex flex-col gap-2 mt-5 text-[#FFFFFF99]">
+                <div className="flex flex-col gap-10  lg:flex-row justify-between">
+                    <div className="flex flex-col gap-3 mt-5 text-[#FFFFFF99]">
                         <p>
                             Name: <span className="text-white">{personal_info.name}</span>
                         </p>
@@ -47,7 +47,7 @@ const About: React.FC<AboutProps> = ({ content }) => {
                             <span className="text-white">{personal_info.freelance_available ? 'Yes' : 'No'}</span>
                         </p>
                     </div>
-                    <div className="flex flex-col mt-3 gap-2 text-[#FFFFFF99]">
+                    <div className="flex flex-col mt-5 gap-3 text-[#FFFFFF99]">
                         <p>
                             Phone: <span className="text-white">{personal_info.phone}</span>
                         </p>
