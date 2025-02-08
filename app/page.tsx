@@ -8,8 +8,8 @@ export default function Home() {
     <div className="mb-20" >
       <div className="lg:flex  lg:w-[955px] items-center mx-auto justify-around flex-row-reverse" >
         <div className="flex justify-center items-center">
-          <Image width={350} height={200} alt='me' src='/mee.jpeg'
-            className="mt-5 h-[350px] rounded-full lg:mr-10 mb-6"
+          <Image width={300} height={200} alt='me' src='/mee.jpeg'
+            className="mt-5 h-[300px] rounded-full lg:mr-10 mb-6"
           />
         </div>
         <div className="flex text-center md:text-left flex-col lg:ml-10 lg:mt-9 lg:items-start justify-center  items-center">
