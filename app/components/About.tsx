@@ -70,8 +70,8 @@ const About: React.FC<AboutProps> = ({ content }) => {
                             key={index}
                             src={image.url}
                             alt={`Skill ${index + 1}`}
-                            width={500} // specify the width
-                            height={500} // specify the height
+                            width={500}
+                            height={500}
                             className="w-full rounded-lg"
                         />
                     ))}
