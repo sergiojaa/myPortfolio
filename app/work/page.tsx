@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Image from 'next/image'
 import { GoArrowUpRight } from "react-icons/go";
 
