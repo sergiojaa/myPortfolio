@@ -23,21 +23,21 @@ export default function Home() {
             <button className="text-[#c5f82a]  border border-[#c5f82a] py-2 px-10 mt-2 rounded-3xl hover:bg-[#c5f82a] hover:text-black transition">
               DOWNLOAD CV
             </button>
-            <div className="flex items-center justify-center gap-3 mt-5 lg:mt-0 transform translate-y-1">
+            <div className="flex items-center roundedn-lg justify-center gap-3 mt-5 lg:mt-0 transform translate-y-[6px]">
               <a href="https://github.com/sergiojaa" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
+                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px]  rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
                 />
               </a>
               <a href="https://www.linkedin.com/in/sergi-qaliashvili/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin}
-                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
+                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px]  rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
                 />
               </a>
               <a href="https://www.instagram.com/sergi_qaliashvili/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram}
-                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px] px-[7px] rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
+                  className="w-[35px] text-[#c5f82a] cursor-pointer border-[#c5f82a] border py-[7px]  rounded-3xl hover:bg-[#c5f82a] hover:text-black transition"
                 />
               </a>
 
