@@ -14,7 +14,7 @@ export default function Work() {
                         height={50}
                         alt="mkoia page"
                         src="/mkoia.png"
-                        className="w-full lg:px-0 px-4 sm:w-[300px] h-[350px]  lg:w-[550px]"
+                        className="w-full lg:px-0 px-5 sm:w-[300px] h-[350px]  lg:w-[550px]"
                     />
                 </div>
                 <div className='flex px-4 lg:px-0 flex-col gap-3'>

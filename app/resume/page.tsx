@@ -35,7 +35,6 @@ const Page: React.FC = () => {
 
   return (
     <div className="flex mt-5 lg:flex-row flex-col items-center gap-10 justify-center md:items-start">
-      {/* Sidebar with buttons */}
       <div className="flex flex-col gap-5 justify-center items-center">
         <button
           className="bg-[#27272c] h-[40px] text-white w-[292px] py-1 px-20 rounded-lg"
@@ -43,12 +42,12 @@ const Page: React.FC = () => {
         >
           About Me
         </button>
-        {/* <button
+        <button
           className="bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg"
           onClick={() => handleButtonClick('Experience')}
         >
           Experience
-        </button> */}
+        </button>
         <button
           className="bg-[#27272c] w-[292px] h-[40px] text-white py-1 px-20 rounded-lg"
           onClick={() => handleButtonClick('Education')}
@@ -64,7 +63,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* Content section */}
-      <div className="w-[500px]">
+      <div className="w-[500px] ">
         {selectedSection === 'About me' && selectedContent && (
           <About content={selectedContent} />
         )}
