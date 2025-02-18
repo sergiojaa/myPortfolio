@@ -15,6 +15,9 @@ export default function Page() {
         if (!input.name || !input.email || !input.text) {
             alert('Please fill in all the fields.');
             return;
+        } else {
+            // alert('thanks for message');
+
         }
         try {
             const response = await fetch('/api/contact', {
