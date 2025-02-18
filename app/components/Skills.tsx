@@ -16,12 +16,11 @@ export default function Skills() {
             <h2 className="text-white text-3xl font-bold mb-3">
                 My <span className="ml-2">Skills</span>
             </h2>
-            <p className="text-[#ffffff99] max-w-[600px] mx-auto lg:mx-0">
+            <p className="text-[#ffffff99] w-[320px] sm:w-auto min-w-[320px] max-w-[600px] mx-auto lg:mx-0">
                 Proficient in HTML, CSS, JavaScript, Next.js, React.js, Tailwind CSS, TypeScript, with a focus on building responsive and dynamic web applications.
             </p>
 
-            {/* Skills Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-6">
+            <div className="grid  grid-cols-2 md:grid-cols-4 gap-5 mt-6">
                 {[
                     { logo: htmlLogo, alt: "HTML" },
                     { logo: cssLogo, alt: "CSS" },
@@ -34,7 +33,7 @@ export default function Skills() {
                 ].map((skill, index) => (
                     <div
                         key={index}
-                        className="bg-[#232329] rounded-xl h-[100px] flex flex-col items-center justify-center relative group cursor-pointer transition-all duration-300"
+                        className="bg-[#232329]  rounded-xl h-[100px] flex flex-col items-center justify-center relative group cursor-pointer transition-all duration-300"
                     >
                         {skill.logo ? (
                             <Image

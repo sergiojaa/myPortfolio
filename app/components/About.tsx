@@ -29,7 +29,7 @@ const About: React.FC<AboutProps> = ({ content }) => {
     return (
         <div className='flex flex-col lg:items-start  items-center'>
             <h1 className="text-3xl text-white">{title}</h1>
-            {text && <p className="text-[#FFFFFF99] text-center min-w-[300px] max-w-[500px]">{text}</p>}
+            {text && <p className="text-[#FFFFFF99] text-start  min-w-[300px] max-w-[500px]">{text}</p>}
             {personal_info && (
                 <div className="flex flex-col gap-10  lg:flex-row justify-between">
                     <div className="flex flex-col gap-3 mt-5 text-[#FFFFFF99]">
