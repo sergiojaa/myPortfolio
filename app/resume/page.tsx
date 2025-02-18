@@ -34,8 +34,8 @@ const Page: React.FC = () => {
   const selectedContent = info.find((information) => information.title === selectedSection);
 
   return (
-    <div className="flex mt-5 lg:flex-row flex-col items-center gap-10 justify-center md:items-start">
-      <div className="flex flex-col gap-5 justify-center items-center">
+    <div className="flex mt-5   lg:flex-row flex-col  items-center gap-10 justify-center md:items-start">
+      <div className="flex mx-auto lg:mx-0 flex-col gap-5 justify-center items-center">
         <button
           className="bg-[#27272c] h-[40px] text-white w-[292px] py-1 px-20 rounded-lg"
           onClick={() => handleButtonClick('About me')}
@@ -63,7 +63,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* Content section */}
-      <div className="w-[500px] ">
+      <div className="w-[500px] mx-auto lg:mx-0 ">
         {selectedSection === 'About me' && selectedContent && (
           <About content={selectedContent} />
         )}
