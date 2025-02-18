@@ -6,7 +6,7 @@ export async function POST(req: Request,) {
             service: 'gmail',
             auth: {
                 user: 'kaliashvilisergi@gmail.com',
-                pass: "skzpwhzfbpgpvmhi"
+                pass: process.env.pass
             }
         })
         const mailForMe = {
