@@ -63,7 +63,7 @@ const Page: React.FC = () => {
       </div>
 
       {/* Content section */}
-      <div className="w-[500px] mx-auto lg:mx-0 ">
+      <div className="mx-auto lg:mx-0 ">
         {selectedSection === 'About me' && selectedContent && (
           <About content={selectedContent} />
         )}
