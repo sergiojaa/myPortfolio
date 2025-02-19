@@ -12,9 +12,9 @@ export default function Work() {
                     <Image
                         width={300}
                         height={50}
-                        alt="mkoia page"
-                        src="/mkoia.png"
-                        className="w-full lg:px-0 px-5 sm:w-[300px] h-[350px]  lg:w-[550px]"
+                        alt="colaboration project image"
+                        src="/colab.jpg"
+                        className="w-full lg:px-0 px-5 sm:w-[300px] h-[350px]  lg:w-[450px]"
                     />
                 </div>
                 <div className='flex px-4 lg:px-0 flex-col gap-3'>
@@ -29,12 +29,12 @@ export default function Work() {
                     </div>
                     <div className='flex gap-5'>
                         <div className='bg-[#FFFFFF0D] cursor-pointer rounded-3xl max-w-max px-3 py-3'>
-                            <a href="https://github.com/sergiojaa/mkoia-real-page" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sergiojaa/ecommerce-website-colab" target="_blank" rel="noopener noreferrer">
                                 <FaGithub size={25} color="white" />
                             </a>
                         </div>
                         <div className='bg-[#FFFFFF0D] cursor-pointer rounded-3xl max-w-max px-3 py-3'>
-                            <a href="https://mkoia-real-page.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://ecommerce-colab.vercel.app/" target="_blank" rel="noopener noreferrer">
                                 <GoArrowUpRight size={25} color="white" />
                             </a>
                         </div>
