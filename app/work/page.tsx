@@ -20,7 +20,7 @@ export default function Work() {
                 <div className='flex px-4 lg:px-0 flex-col gap-3'>
                     <h2 className='text-6xl text-white'>01</h2>
                     <p className='text-3xl text-white'>Front-End Project</p>
-                    <p className='text-[#ffffff99] w-full max-w-[505px]'>Created a sleek, responsive website for Mkoia using Next.js, showcasing the company’s services, with an intuitive layout, fast loading speeds, and seamless navigation, ensuring a user-friendly experience across all devices.</p>
+                    <p className='text-[#ffffff99] w-full max-w-[505px]'>Collaborated on a team project to develop a full-featured e-commerce platform with user authentication, product descriptions, cart and wishlist functionality, ensuring a seamless shopping experience with an intuitive and responsive design.</p>
                     <div className='flex mt-3 text-[#C5F82A] gap-2'>
                         <p>React.js,</p>
                         <p>Typescript,</p>
