@@ -22,7 +22,7 @@ export default function Work() {
                     <p className='text-3xl text-white'>Front-End Project</p>
                     <p className='text-[#ffffff99] w-full max-w-[505px]'>Collaborated on a team project to develop a full-featured e-commerce platform with user authentication, product descriptions, cart and wishlist functionality, ensuring a seamless shopping experience with an intuitive and responsive design.</p>
                     <div className='flex mt-3 text-[#C5F82A] gap-2'>
-                        <p>Next.js,</p>
+                        <p>Next .js,</p>
                         <p>Typescript,</p>
                         <p>tailwind.css</p>
 
