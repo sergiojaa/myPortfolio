@@ -54,8 +54,8 @@ export default function Home() {
       <div className="flex flex-col  gap-5 lg:w-[830px] mx-auto lg:gap-24 items-center mt-5 lg:mt-16 md:flex-row md:justify-center">
         {/* <div class="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none"> */}
         <div className="text-white w-[150px] gap-4    flex items-center">
-          <h3 className="text-3xl lg:text-[45px]   font-bold">2</h3>
-          <h4 className="text-#FFFFFFE6]">years of experience</h4>
+          <h3 className="text-3xl lg:text-[45px]   font-bold">1</h3>
+          <h4 className="text-#FFFFFFE6]">year of experience</h4>
         </div>
         <div className="text-white w-[150px] gap-4 justify-center flex items-center">
           <h3 className="text-3xl lg:text-[45px]  font-bold">4</h3>
