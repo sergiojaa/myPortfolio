@@ -58,7 +58,7 @@ export default function Home() {
           <h4 className="text-#FFFFFFE6]">year of experience</h4>
         </div>
         <div className="text-white w-[150px] gap-4 justify-center flex items-center">
-          <h3 className="text-3xl lg:text-[45px]  font-bold">4</h3>
+          <h3 className="text-3xl lg:text-[45px]  font-bold">5</h3>
           <h4 className="text-[#FFFFFFE6]">Projects completed</h4>
         </div>
         <div className="flex text-white gap-4  justify-center items-center">
@@ -66,7 +66,7 @@ export default function Home() {
           <h4 className="text-[#FFFFFFE6]">Technologies mastered</h4>
         </div>
         <div className="text-white w-[150px] gap-4 justify-center flex items-center">
-          <h3 className="text-3xl lg:text-[45px]  font-bold">999</h3>
+          <h3 className="text-3xl lg:text-[40px]  font-bold">1000+</h3>
           <h4 className="text-[#FFFFFFE6]">Total commits</h4>
         </div>
 
