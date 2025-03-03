@@ -41,7 +41,7 @@ export default function Work() {
                     </div>
                 </div>
             </div>
-            <div className='flex md:flex-row-reverse  mt-10 max-w-[825px] mx-auto flex-col gap-5 items-center justify-center'>
+            {/* <div className='flex md:flex-row-reverse  mt-10 max-w-[825px] mx-auto flex-col gap-5 items-center justify-center'>
                 <div className="flex justify-center">
                     <Image
                         width={300}
@@ -111,7 +111,7 @@ export default function Work() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
 
     )
